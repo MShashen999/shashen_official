@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=New+Amsterdam&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap');
+
+
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-color: black;
+    color: white;
+}
+
+
+/* background video */
+
+.back-video {
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9){
+
+    .back-video {
+
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-aspect-ratio:16/9){
+
+    .back-video {
+
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+/*navigation */
+
+.nav-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5em;
+}
+
+.a-logo-name {
+
+    text-decoration: none;
+    color: white;
+}
+
+.logo-name {
+
+    font-size: 2rem;
+    font-family: Marcellus;
+    font-weight: bold;
+    /* position: relative;
+    left: 144px; */
+    
+}
+
+.nav-ul {
+
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Marcellus;
+    padding-inline: 0.5em;
+    
+
+}
+
+.nav-a:hover {
+
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    padding-inline: 0.5em;
+    transition: 0.2s all linear;
+}
+
+
+/*hero section*/
+
+.wrapper-home {
+
+    position: relative;
+    top: 70px;
+    color: white;
+    text-align: center;
+}
+
+.heading2 {
+
+    line-height: 1em;
+    text-align: center;
+    font-size: 55px;
+    font-family: Marcellus;
+}
+
+.heading1 {
+
+    text-align: center;
+    font-size: 2em;
+    font-family: Marcellus;
+}
+
+.heading3 {
+
+    font-size:1.5em ;
+    font-family: Marcellus;
+}
+
+.btn-contact-me {
+
+    font-size: 1rem;
+    padding-block: 0.5em;
+    padding-inline: 1em;
+    position: relative;
+    top: 30px;
+    background-color: white;
+    border: none;
+    font-family: Marcellus;
+}
+
+.btn-contact-me:hover {
+
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.2s all linear;
+}
+
+/*about-me*/
+
+
+
+/* About */
+
+.progress-bar-main-all {
+
+    background-color: rgb(122, 122, 122);
+    height: 1em;
+    width: 20em;
+}
+
+#progress-bar-second-html {
+
+    background-color: rgb(46, 46, 46);
+    height: 1em;
+    width: 90%;
+}
+
+#html-all {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.html-main-main {
+
+    width: 20em;
+}
+
+#progress-bar-second-css {
+
+    width: 70%;
+    height: 1em;
+    background-color: rgb(46, 46, 46);
+}
+
+#progress-bar-second-js {
+
+    width: 20%;
+    height: 1em;
+    background-color: rgb(46, 46, 46);
+}
+
+#progress-bar-second-rd {
+
+    width: 30%;
+    height: 1em;
+    background-color: rgb(46, 46, 46);
+}
+
+#progress-bar-second-gd {
+
+    width: 60%;
+    height: 1em;
+    background-color: rgb(46, 46, 46);
+}
+
+#about-img {
+
+    width: 200px;
+    height: 200px;
+}
+
+#container-div {
+
+    display: flex;
+    font-family: Marcellus;
+    margin-inline: 60px;
+    gap: 30px;
+    
+}
+
+#about-me {
+
+    position: relative;
+    top: 270px;
+    padding-top: 2em;
+}
+
+#details-img-main {
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#skills-main {
+
+    margin-top: 30px;
+}
+
+#about-paragraph {
+
+    line-height: 32px;
+}
+
+
+/* Projects */
+
+
+#projects {
+
+    position: relative;
+    top: 320px;
+    font-family: Marcellus;
+
+}
+
+.project-img {
+
+    width: 300px;
+    height: 200px;
+}
+
+.container-projects {
+
+    padding-top: 40px;
+}
+
+.projects-headings {
+
+    text-align: center;
+}
+
+.examples-projects {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.project {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding-inline: 30px;
+    padding-block: 30px;
+    color: white;
+    border: 3px solid white;
+}
+
+.project:hover {
+
+    background-color: gray;
+    color: black;
+    transition: 0.3s all linear;
+
+}
+
+.project-explanation {
+
+    text-align: center;
+}
+
+
+/*contact-me*/
+
+#contact-me {
+
+    position: relative;
+    top: 350px;
+    font-family: Marcellus;
+    padding-top: 60px;
+}
+
+.contact-me-heading {
+
+    text-align: center;
+}
+
+.contact-me-div {
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.contact-me-div a:hover {
+
+    color: grey;
+    transition: 0.4s all linear;
+}
+
+.normal,.social {
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.normal a ,.social a{
+
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.made-by {
+
+    text-align: center;
+    position: relative;
+    top: 500px;
+    font-family: Marcellus;
+    padding-bottom: 100px;
+}
+
+.made-by-a {
+
+    color: white;
+    text-decoration: none;
+}
+
+.made-by:hover {
+
+    color: gray;
+    cursor: pointer;
+    transition: 0.3s all linear;
+}
+
+
+/* Media Queries */
+
+@media (max-width:720px) {
+
+    .back-video{
+
+        display: none;
+    }
+
+    body {
+
+        background-color: black;
+    }
+
+    .nav-container {
+
+        display: flex;
+        flex-direction: column;
+        padding-top: 1em;
+    }
+
+    .logo-name {
+
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+    .nav-ul {
+
+        margin-top: 20px;
+        text-align: center;
+        
+    }
+
+    .nav-a {
+
+        font-size: 0.8rem;
+    }
+
+    .container-home {
+
+        position: relative;
+        bottom: 60px;
+    }
+
+    .heading2 {
+
+        font-size: 2rem;
+    }
+
+    .heading3 {
+
+        font-size: 1rem;
+    }
+
+    .heading1 {
+
+        font-size: 1rem;
+    }
+
+    .btn-contact-me {
+
+        font-size: 1rem;
+        padding-block: 0.5em;
+        padding-inline: 1em;
+        position: relative;
+        top: 30px;
+        background-color: white;
+        border: none;
+        font-family: Marcellus;
+    }
+
+    #details-img-main {
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #heading-skill {
+
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    #container-div {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-me {
+
+        position: relative;
+        top: 100px;
+        padding-top: 2em;
+    }
+
+    #main-left {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills-main {
+
+        margin-top: 10px;
+    }
+    
+    #about-heading {
+
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    #about-paragraph {
+
+        text-align: center;
+    }
+
+    .examples-projects {
+
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .project {
+
+        border: none;
+        margin-top: 10px;
+    }
+
+    #projects {
+
+        position: relative;
+        top: 150px;
+        font-family: Marcellus;
+    
+    }
+
+    .project:hover {
+
+        background-color: black;
+        color: white;
+        transition: 0.3s all linear;
+    
+    }
+
+    #contact-me {
+
+       position: relative;
+       top: 150px;
+    }
+
+    .made-by {
+
+        text-align: center;
+        position: relative;
+        top: 300px;
+        font-family: Marcellus;
+        padding-bottom: 100px;
+    }
+
+}
